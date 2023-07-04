@@ -1,6 +1,6 @@
 <% start_date = @quiz.created_at %>
 <% end_date = DateTime.now() %>
-<% distance =  distance_of_time_in_words(start_date, end_date)%>
+<% distance = distance_of_time_in_words(start_date, end_date)%>
 <div class="grid grid-cols-6 mt-5 border rounded-2xl border-purple-light shadow-md backdrop-blur-2xl backdrop-saturate-200 p-8">
   <div class="flex flex-col ml-5">
     <p class="text-3xl"><%= @quiz.name %></p>
