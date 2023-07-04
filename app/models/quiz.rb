@@ -1,4 +1,5 @@
 class Quiz < ActiveRecord::Base
+  validates :name, :description, presence: true
 end
 
 # == Schema Information

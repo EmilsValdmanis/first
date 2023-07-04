@@ -1,0 +1,8 @@
+<nav class="mx-auto rounded-xl  bg-white bg-opacity-80 py-2 px-4 shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+    <div>
+        <div class="container mx-auto flex items-center text-gray-900 gap-5">
+            <%= link_to_unless_current "Quizz App", root_path, class:"text-purple-light hover:text-purple cursor-pointer antialiased h-auto"  %>
+            <%= link_to_unless_current "Quizzes", quizzes_path, class: "text-purple-light hover:text-purple cursor-pointer antialiased h-auto"%>
+        </div>
+    </div>
+</nav>
