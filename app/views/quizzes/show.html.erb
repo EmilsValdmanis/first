@@ -8,8 +8,8 @@
   </div>
   <p class="text-lg mt-10 mx-5 col-span-4"><%= @quiz.description %></p>
   <div class="flex justify-end items-end mt-10 gap-2">
-    <%= button_to "Edit", edit_quiz_path, class: "bg-purple-light hover:bg-blue-light text-white border font-bold py-2 px-3 rounded" %>
-    <%= button_to "Delete", quiz_path, method: :delete, class: "bg-purple hover:bg-red border text-white border font-bold py-2 px-3 rounded"%>
+    <%= button_to "Edit", edit_quiz_path, method: :get, class: "bg-purple-light hover:bg-blue-light border border-purple hover:border-blue text-white border font-bold py-2 px-3 rounded" %>
+    <%= button_to "Delete", quiz_path, method: :delete, class: "bg-purple hover:bg-red border border border-purple-dark hover:border-red-dark text-white border font-bold py-2 px-3 rounded"%>
   </div> 
 </div>
   

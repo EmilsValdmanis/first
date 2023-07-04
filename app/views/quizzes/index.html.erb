@@ -1,7 +1,7 @@
 <%= link_to "+ New", new_quiz_path, class: "bg-purple-light hover:bg-purple text-white border border-purple font-bold py-2 px-3 rounded"%>
 <div class="flex flex-col"> 
    <% @quizzes.each do | quiz | %>
-    <div onclick = "location.href='<%= quiz_path(quiz.id)%>'" class="grid grid-cols-4 mt-5 border rounded-2xl border-purple hover:bg-purple-light shadow-md backdrop-blur-2xl backdrop-saturate-200 p-7">
+    <div onclick = "location.href='<%= quiz_path(quiz.id)%>'" class="grid grid-cols-4 mt-5 border rounded-2xl border-purple hover:bg-purple-superlight shadow-md backdrop-blur-2xl backdrop-saturate-200 p-7">
       <p class="text-2xl"><%= quiz.name %></p>
       <p class="text-md ml-6 col-span-3"><%= quiz.description %></p>
     </div>
